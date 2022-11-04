@@ -1,0 +1,19 @@
+@mixin font-face($fontFamily, $fontFamily_link, $fontFamily_format) {
+  @font-face {
+    font-family: '#{$fontFamily}';
+    src: url('#{$fontFamily_link}') format('#{$fontFamily_format}');
+
+    font-display: swap;
+  }
+}
+
+@include font-face(
+  'circe',
+  'https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/fonts/6161/Circe.woff',
+  'woff'
+);
+@include font-face(
+  'TwentytwelveSansC',
+  'https://lamcdn.net/www.wonderzine.com/gui/twentytwelve_sans_c_old_a-webfont-581c1c7ddde1a467c50a154d68603d27c99e1c0c9efd7e0db2594a03427a279e.woff2',
+  'woff2'
+);
